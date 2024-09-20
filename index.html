@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="SkinCON: Towards consensus for the uncertainty of skin cancer sub-typing through distribution regularized adaptive predictive sets (DRAPS)">
+  <meta name="keywords" content="SkinCON, skin cancer, predictive sets, uncertainty">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkinCON: Towards consensus for the uncertainty of skin cancer sub-typing through distribution regularized adaptive predictive sets (DRAPS)</title>
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TTS06R4XE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9TTS06R4XE');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://albuspeter.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+            TBD
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">SkinCON: Towards consensus for the uncertainty of skin cancer sub-typing through distribution regularized adaptive predictive sets (DRAPS)</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://albuspeter.github.io/">Zhihang Ren</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Yunqi Li<sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              Xinyu Li<sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              Xinrong Xie<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Erik P. Duhaime<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Kathy Fang<sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://profiles.ucl.ac.uk/90165-tapabrata-rohan-chakraborty">Tapabrata Chakraborty</a><sup>4,5</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://yunhuiguo.github.io/">Yunhui Guo</a><sup>6</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://web.eecs.umich.edu/~stellayu/">Stella X. Yu</a><sup>1,7</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://whitneylab.berkeley.edu/people/dave.html">David Whitney</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of California, Berkeley</span>
+            <span class="author-block"><sup>2</sup>Centaur Labs, Boston MA, USA</span>
+            <span class="author-block"><sup>3</sup>Golden State Dermatology, Albany CA, USA</span>
+            <span class="author-block"><sup>4</sup>The Alan Turing Institute and University College London, London, UK</span>
+            <span class="author-block"><sup>5</sup>University of Oxford, Oxford, United Kingdom</span>
+            <span class="author-block"><sup>6</sup>University of Texas at Dallas</span>
+            <span class="author-block"><sup>7</sup>University of Michigan, Ann Arbor</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">(<sup>*</sup>Equal Contribution)</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://openaccess.thecvf.com/content/WACV2024/html/Ren_VEATIC_Video-Based_Emotion_and_Affect_Tracking_in_Context_Dataset_WACV_2024_paper.html"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2309.06745"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/AlbusPeter/VEATIC"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://albuspeter.github.io/projects/VEATIC/wacv24-1091.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Poster</span>
+                  </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="column has-text-centered">
+        <img src="./static/images/Intro.png", width="500 px">
+      </div>
+      <h2 class="subtitle has-text-centered">
+        <b>Prediction set examples on ISIC 2019 challenge dataset.</b> We show three examples of the class Melanoma and the 90% prediction sets generated by DRAPS.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Deep learning has been widely utilized in medical diagnosis. Convolutional neural networks and transformers can achieve high predictive accuracy, 
+            which can be on par with or even exceed human performance. However, uncertainty quantification remains an unresolved issue, 
+            impeding the deployment of deep learning models in practical settings. Conformal analysis can, in principle, estimate the uncertainty of each diagnostic prediction, 
+            but doing so effectively requires extensive human annotations to characterize the underlying empirical distributions. 
+            This has been challenging in the past because instance-level class distribution data has been unavailable: Collecting massive ground truth labels is already challenging, 
+            and obtaining the class distribution of each instance is even more difficult. Here, we provide a large skin cancer instance-level class distribution dataset, 
+            SkinCON, that contains 25,331 skin cancer images from the ISIC 2019 challenge dataset. SkinCON is built upon over 937,167 diagnostic judgments from 10,509 participants. 
+            Using SkinCON, we propose the distribution regularized adaptive predictive sets (DRAPS) method for skin cancer diagnosis. We also provide a new evaluation metric based on SkinCON. 
+            Experiment results show the quality of our proposed DRAPS method and the uncertainty variation with respect to patient age and sex from health equity and fairness perspective.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Response distributions on ISIC 2019 challenge dataset</h2>
+        <div class="hero-body">
+          <img src="./static/images/diversity.png", width="800 px", align="center">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            We plot the response frequency of sample skin cancer images. We argue that the empirical response distribution may reveal the inherent skin cancer property.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Annotation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Annotations</h2>
+
+        <!-- Process. -->
+        <h3 class="title is-4">Procedures</h3>
+        <div class="content has-text-justified">
+          <p>
+            User interface used for video annotation. a) Participants were first shown the target character and were reminded of the task
+            instructions before the start of each video. b) The overlayed valence and arousal grid that was present while observers annotated the
+            videos. Observers were instructed to continuously rate the emotion of the target character in the video in real-time.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/annotation.png", width="800 px", align="center">
+        </div>
+        <!--/ Process. -->
+
+      </div>
+    </div>
+    <!--/ Annotation. -->
+
+    <div class="columns is-centered">
+
+      <!-- Sample Ratings. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Diagnostic biases</h2>
+          <div class="column has-text-centered">
+            <img src="./static/images/biases.png", width="800 px", align="center">
+          </div>
+          <p>
+            a) Diagnostic biases as a function of patient age in ISIC 2019 challenge
+            dataset. b) Diagnostic biases as a function of patient gender in ISIC 2019 challenge dataset.            
+          </p>
+        </div>
+      </div>
+      <!--/ Sample Ratings. -->
+
+      <!-- Annotation Distribution. -->
+      <!-- <div class="column">
+        <h2 class="title is-3">Data Distributions</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <div class="column has-text-centered">
+              <img src="./static/images/VA_dist.png", width="500 px", align="center">
+            </div>
+            <p>
+              Distribution of valence and arousal ratings across participants.
+              Individual white dots represent the average valence and
+              arousal of the continuous ratings for each video clip for Hollywood
+              movies. Blue squares and green triangles represent the average
+              valence and arousal for documentaries and home videos, respectively.
+            </p>
+          </div>
+
+        </div>
+      </div> -->
+    </div>
+    <!--/ Annotation Distribution. -->
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Downloads. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Download</h2>
+        <div class="content has-text-justified">
+          <p>
+            <strong>VEATIC is available to download for research purposes.</strong>
+          </p>
+          <p>
+            <strong>The copyright remains with the original owners of the video.</strong>
+          </p>
+        </div>
+
+        <!-- VEATIC Data. -->
+        <h3 class="title is-4">VEATIC Data</h3>
+        <div class="content has-text-justified">
+          <p>
+            This benchmark contains 124 annotated videos.
+          </p>
+          <p>
+            For each video, the first 70% of the frames are for training and the rest 30% of the frames are for testing. 
+            You can directly utilize the dataset class provided in our baseline repository for training and testing your own model.
+          </p>
+        </div>
+        <div class="content has-text-justified">
+          <button class="btn" onclick="location.href='https://drive.google.com/file/d/1HZIw8RGsRwwENhJlhNJRL88YyfiE442N/view?usp=sharing'"><i class="fa fa-download"></i>VEATIC</button>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            VEATIC also contains videos with interacting characters and ratings for separate characters in the same video. These videos are those with video IDs 98-123.
+          </p>
+        </div>
+        <div class="column has-text-centered">
+          <img src="./static/images/novelrating.png", width="600 px", align="center">
+        </div>
+        <!--/ VEATIC Data. -->
+
+        <!-- Psychophysics. -->
+        <h3 class="title is-4">Psychophysics Data</h3>
+        <div class="content has-text-justified">
+          <p>
+            We also provide individual ratings of each video with video IDs 0-82 for psychophysical studies. These ratings can be found below. 
+            Each column of a file represents one individual's ratings, and same individuals can be identified via their ID markers.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <button class="btn" onclick="location.href='https://drive.google.com/file/d/1UJ2A5ZJxOzKLW63T_S8DvZ1C8NrSrMgI/view?usp=sharing'"><i class="fa fa-download"></i>VEATIC_Psych</button>
+        </div>
+        <!--/ Psychophysics. -->
+
+        <!-- Target. -->
+        <h3 class="title is-4">Target Characters</h3>
+        <div class="content has-text-justified">
+          <p>
+            You can find the target characters of each video below. We circled out the target character with a red circle in a frame of each video.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <button class="btn" onclick="location.href='https://drive.google.com/file/d/1V7jHbeVTSBN8M0IG7-CeHKAWG6b6W4AB/view?usp=sharing'"><i class="fa fa-download"></i>Characters</button>
+        </div>
+        <!--/ Target. -->
+
+      </div>
+    </div>
+    <!--/ Downloads. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @inproceedings{ren2024veatic,
+        title={VEATIC: Video-based Emotion and Affect Tracking in Context Dataset},
+        author={Ren, Zhihang and Ortega, Jefferson and Wang, Yifan and Chen, Zhimin and Guo, Yunhui and Yu, Stella X and Whitney, David},
+        booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+        pages={4467--4477},
+        year={2024}
+      }
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <!-- <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a> -->
+      <a class="icon-link" href="https://github.com/AlbusPeter" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website refers to <a href="https://github.com/nerfies/nerfies.github.io">Nerfies website</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
